@@ -96,18 +96,18 @@ body, html {
     line-height: 21px;
 }
 
-.slider-navigation {
+.slider-navigation-buttons {
     display: flex;
     margin-top: 95px;
     margin-bottom: 120px;
 }
 
-.slider-navigation img {
+.slider-navigation-buttons img {
     margin-right: 17px;
     cursor: pointer;
 }
 
-.slider-navigation .active {
+.slider-navigation-buttons .active {
     background-color: #FFFFFF;
 }
 
@@ -161,3 +161,4 @@ body, html {
 .slider-media .active {
     display: block;
 }
+

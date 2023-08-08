@@ -21,8 +21,8 @@ let imagesData = [{
 function initSlider() {
     if (!imagesData || !imagesData.length) return;
 
-    let media = document.querySelector(".slider-media");
-    let sliderImg = media.querySelector(".slider-imgs");
+    let mediaDiv = document.querySelector(".slider-media");
+    let sliderImg = mediaDiv.querySelector(".slider-imgs");
     let navDiv = document.querySelector(".slider-navigation-buttons");
     let aboutProject = document.querySelector(".slider-description-completed-about");
     let containerSlider = document.querySelector(".container-slider");
@@ -80,7 +80,7 @@ function initSlider() {
     }
 
     function initUrls() {
-        media.querySelectorAll(".url-project").forEach(urlProject => {
+        mediaDiv.querySelectorAll(".url-project").forEach(urlProject => {
             urlProject.addEventListener("click", function() {
                 moveSlider(this.dataset.index);
             });
